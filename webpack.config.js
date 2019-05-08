@@ -18,6 +18,11 @@ module.exports = (_env, options) => ({
   entry: {
     main: "./src/index.js",
   },
+  devServer: {
+    proxy: {
+      '/api': 'http://localhost:3001',
+    },
+  },
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, outputPath),

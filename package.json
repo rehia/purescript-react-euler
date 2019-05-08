@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "start": "webpack-dev-server -wd --port 3000",
+    "start-server": "node app/server.js",
+    "start": "npm run start-server & webpack-dev-server -wd --port 3000",
     "start-public": "webpack-dev-server -wd --port 3000 --host 0.0.0.0",
     "build": "webpack -p",
     "pulp": "pulp --psc-package",
