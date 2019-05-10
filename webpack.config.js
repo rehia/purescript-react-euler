@@ -98,7 +98,7 @@ module.exports = (_env, options) => ({
       {
         test: /\.js$/,
         loader: "source-map-loader",
-        exclude: /node_modules|bower_components/
+        exclude: /node_modules|bower_components|psc-package/
       },
       {
         oneOf: [

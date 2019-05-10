@@ -3,6 +3,9 @@
   "set": "psc-0.12.3",
   "source": "https://github.com/purescript/package-sets.git",
   "depends": [
+    "aff",
+    "affjax",
+    "argonaut",
     "console",
     "effect",
     "lists",
